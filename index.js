@@ -25,6 +25,14 @@ mongoose.connect('mongodb://localhost:27017/farmStand').then(() => {
 })
 
 
+app.delete('/products/:id', async (req, res) => {
+
+    const { id } = req.params;
+    const product = await Product.deleteOne({ _id: id }, { new: true });
+    console.log(product);
+    res.redirect('/products')
+})
+
 app.put('/products/:id', async (req, res) => {
 
     console.log(req.body)
