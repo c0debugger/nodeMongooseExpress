@@ -21,7 +21,7 @@ const data =
 
             name: 'bannana',
             price: 1.25,
-            category: 'diary',
+            category: 'dairy',
             required: true
         },
         {
