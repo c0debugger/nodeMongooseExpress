@@ -12,7 +12,7 @@
     <h3><%= product._id %> </h3>
     <h3>Name :<%= product.name %></h3>
     <h3>Price: <%= product.price %></h2>
-    <h3>Category: <%= product.category %></h2>
+    <h3>Category: <a href="/products?category=<%=product.category %>"><%= product.category %></a></h2>
     
       <a href="/products">All products</a>
       <a href="/products/<%= product._id %>/edit ">EDIT</a>
